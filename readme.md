@@ -1,15 +1,15 @@
 # Scrapper notifier
 
-This is a simple project that allows to monitor for changes in a web page and send a message if page has changed insidd a css selector.
+This simple program monitorizes a web page for changes and send a message if page has changed within a css selector.
 
-Done with [Puppeteer](https://github.com/puppeteer/puppeteer) for the scrapping of dynamic web rendering.
+Done with [Puppeteer](https://github.com/puppeteer/puppeteer) as scrapping tool capable of handling dynamic web rendering.
 
-## Parameters
+## Environment
 
-To run this you will need to add a .env file having this environment variables defined:
+Some Environment variables are required. Create a .env file containing these environment variables:
 
 - TELEGRAM_BOT_TOKEN: The token of your [Telegram bot](https://core.telegram.org/bots).
-- TELEGRAM_CHAT_ID: The chat id where you want to send messages. Send a message to your bot and go to https://api.telegram.org/bot[TELEGRAM_BOT_TOKEN]/getUpdates to get this.
+- TELEGRAM_CHAT_ID: The chat id where you want to send messages. Send a message from Telegram to your bot and go to https://api.telegram.org/bot[TELEGRAM_BOT_TOKEN]/getUpdates to get this.
 - SCRAPE_URL: The url to monitor
 - SCRAPE_SELECTOR: The selector (page fragment) to monitor
 
@@ -23,7 +23,7 @@ To build the image run:
 docker build . -t scrapper-notifier
 ```
 
-To run the image once builded:
+To run the image once built:
 
 ```
 docker run scrapper-notifier
