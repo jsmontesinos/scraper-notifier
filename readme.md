@@ -1,8 +1,8 @@
 # Scrapper notifier
 
-This is a simple project that allows to monitor for changes in a web page and send a message if page has changed withing a css selector.
+This is a simple project that allows to monitor for changes in a web page and send a message if page has changed insidd a css selector.
 
-Done with [Puppeteer](https://github.com/puppeteer/puppeteer) for the scrapping which allow dynamic web rendering.
+Done with [Puppeteer](https://github.com/puppeteer/puppeteer) for the scrapping of dynamic web rendering.
 
 ## Parameters
 
